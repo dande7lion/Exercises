@@ -5,7 +5,7 @@
 
 std::vector<std::string> generateIP(const std::string& s){
     std::vector<std::string> result;
-    std::string prepareIP[4];
+    std::string prepareIP[4];               //subsequent elements will be values between dots
     int length = s.length();
     if(length < 4 || length > 12){
         std::cout << "Incorrect data. Please try again" << std::endl;
@@ -34,8 +34,8 @@ std::vector<std::string> generateIP(const std::string& s){
                     continue;
 
                 std::string oneCorrectAddress;
-                    oneCorrectAddress = prepareIP[0] + "." + prepareIP[1] + "." + prepareIP[2] + "." + prepareIP[3];
-                    result.push_back(oneCorrectAddress);
+                oneCorrectAddress = prepareIP[0] + "." + prepareIP[1] + "." + prepareIP[2] + "." + prepareIP[3];
+                result.push_back(oneCorrectAddress);
             }
         }
     }

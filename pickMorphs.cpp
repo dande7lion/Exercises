@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <array>
-#include <cstdlib>
 #include <ctime>
 
 std::array<int, 4> pickMorphs(const std::vector<float>& weights){
